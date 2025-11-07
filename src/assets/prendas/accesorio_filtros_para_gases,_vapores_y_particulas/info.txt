@@ -1,0 +1,6 @@
+• Filtros con conexión compatibles para semimáscara y máscara completa. 
+• Cumplimiento de norma EN 14387.
+•Tipo y clase: 
+     - Gases y vapores (ABEK1)
+     - Partículas (P3)
+• Reutilizables

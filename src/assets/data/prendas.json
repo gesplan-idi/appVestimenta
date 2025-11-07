@@ -1,0 +1,2328 @@
+{
+  "accesorio_filtros_para_gases,_vapores_y_partÍculas": {
+    "nombre": "Accesorio filtros para gases, vapores y partÍculas",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/accesorio_filtros_para_gases,_vapores_y_particulas_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/accesorio_filtros_para_gases,_vapores_y_particulas_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/accesorio_filtros_para_gases,_vapores_y_particulas_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/accesorio_filtros_para_gases,_vapores_y_particulas_trasera.png"
+      }
+    }
+  },
+  "botas_con_protección_anticorte_clase_2": {
+    "nombre": "Botas con protección anticorte clase 2",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/accesorio_filtros_para_gases,_vapores_y_particulas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/botas_con_protección_anticorte_clase_2/botas_con_proteccion_anticorte_clase_2_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/botas_con_protección_anticorte_clase_2/botas_con_proteccion_anticorte_clase_2_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/botas_con_protección_anticorte_clase_2/botas_con_proteccion_anticorte_clase_2_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/botas_con_protección_anticorte_clase_2/botas_con_proteccion_anticorte_clase_2_trasera.png"
+      }
+    }
+  },
+  "botas_de_agua": {
+    "nombre": "Botas de agua",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/botas_de_agua/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/botas_de_agua/botas_de_agua_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/botas_de_agua/botas_de_agua_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/botas_de_agua/botas_de_agua_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/botas_de_agua/botas_de_agua_trasera.png"
+      }
+    }
+  },
+  "botas_forestales_reforzadas": {
+    "nombre": "Botas forestales reforzadas",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/botas_forestales_reforzadas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/botas_forestales_reforzadas/botas_forestales_reforzadas_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/botas_forestales_reforzadas/botas_forestales_reforzadas_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/botas_forestales_reforzadas/botas_forestales_reforzadas_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/botas_forestales_reforzadas/botas_forestales_reforzadas_trasera.png"
+      }
+    }
+  },
+  "botas_forestales_sin_puntera": {
+    "nombre": "Botas forestales sin puntera",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/botas_forestales_sin_puntera/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/botas_forestales_sin_puntera/botas_forestales_sin_puntera_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/botas_forestales_sin_puntera/botas_forestales_sin_puntera_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/botas_forestales_sin_puntera/botas_forestales_sin_puntera_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/botas_forestales_sin_puntera/botas_forestales_sin_puntera_trasera.png"
+      }
+    }
+  },
+  "botas_forestales_trabajos_especiales_(trekking)": {
+    "nombre": "Botas forestales trabajos especiales(trekking)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/botas_forestales_trabajos_especiales_(trekking)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/botas_forestales_trabajos_especiales_(trekking)/botas_forestales_trabajos_especiales_(trekking)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/botas_forestales_trabajos_especiales_(trekking)/botas_forestales_trabajos_especiales_(trekking)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/botas_forestales_trabajos_especiales_(trekking)/botas_forestales_trabajos_especiales_(trekking)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/botas_forestales_trabajos_especiales_(trekking)/botas_forestales_trabajos_especiales_(trekking)_trasera.png"
+      }
+    }
+  },
+  "braga_cuello": {
+    "nombre": "Braga de Cuello",
+    "valor": "",
+    "text": "prendas/braga_cuello/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/braga_cuello/braga_cuello_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/braga_cuello/braga_cuello_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/braga_cuello/braga_cuello_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/braga_cuello/braga_cuello_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "termicas_calcetines_termicos": {
+    "nombre": "Calcetines termicos",
+    "valor": "",
+    "text": "prendas/termicas/calcetines_termicos/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/termicas/calcetines_termicos/calcetines_termicos_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/termicas/calcetines_termicos/calcetines_termicos_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/termicas/calcetines_termicos/calcetines_termicos_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/termicas/calcetines_termicos/calcetines_termicos_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_alta_visibilidad": {
+    "nombre": "Camiseta Alta Visibilidad",
+    "valor": "Logotipo_Negro.png",
+    "logos": 0,
+    "text": "prendas/camisetas/camiseta_alta_visibilidad/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_alta_visibilidad/camiseta_alta_visibilidad_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_alta_visibilidad/camiseta_alta_visibilidad_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_alta_visibilidad/camiseta_alta_visibilidad_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_alta_visibilidad/camiseta_alta_visibilidad_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_corta_reflectante_tallaje_femenino": {
+    "nombre": "Camiseta Manga Corta Reflectante Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_femenino/camiseta_manga_corta_reflectante_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_femenino/camiseta_manga_corta_reflectante_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_femenino/camiseta_manga_corta_reflectante_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_femenino/camiseta_manga_corta_reflectante_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_corta_reflectante_tallaje_masculino": {
+    "nombre": "Camiseta Manga Corta Reflectante Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_masculino/camiseta_manga_corta_reflectante_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_masculino/camiseta_manga_corta_reflectante_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_masculino/camiseta_manga_corta_reflectante_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_reflectante_tallaje_masculino/camiseta_manga_corta_reflectante_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_corta_tallaje_femenino": {
+    "nombre": "Camiseta Manga Corta Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_corta_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_femenino/camiseta_manga_corta_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_femenino/camiseta_manga_corta_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_femenino/camiseta_manga_corta_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_femenino/camiseta_manga_corta_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_corta_tallaje_masculino": {
+    "nombre": "Camiseta Manga Corta Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_corta_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_masculino/camiseta_manga_corta_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_masculino/camiseta_manga_corta_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_masculino/camiseta_manga_corta_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_corta_tallaje_masculino/camiseta_manga_corta_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_larga_reflectante_tallaje_femenino": {
+    "nombre": "Camiseta Manga Larga Reflectante Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_femenino/camiseta_manga_larga_reflectante_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_femenino/camiseta_manga_larga_reflectante_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_femenino/camiseta_manga_larga_reflectante_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_femenino/camiseta_manga_larga_reflectante_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_larga_reflectante_tallaje_masculino": {
+    "nombre": "Camiseta Manga Larga Reflectante Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_masculino/camiseta_manga_larga_reflectante_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_masculino/camiseta_manga_larga_reflectante_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_masculino/camiseta_manga_larga_reflectante_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_reflectante_tallaje_masculino/camiseta_manga_larga_reflectante_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_larga_tallaje_femenino": {
+    "nombre": "Camiseta Manga Larga Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_larga_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_femenino/camiseta_manga_larga_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_femenino/camiseta_manga_larga_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_femenino/camiseta_manga_larga_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_femenino/camiseta_manga_larga_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_manga_larga_tallaje_masculino": {
+    "nombre": "Camiseta Manga Larga Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_manga_larga_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_masculino/camiseta_manga_larga_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_masculino/camiseta_manga_larga_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_masculino/camiseta_manga_larga_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_manga_larga_tallaje_masculino/camiseta_manga_larga_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_tecnica_manga_corta_tallaje_femenino": {
+    "nombre": "Camiseta Técnica manga Corta Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_femenino/camiseta_tecnica_manga_corta_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_femenino/camiseta_tecnica_manga_corta_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_femenino/camiseta_tecnica_manga_corta_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_femenino/camiseta_tecnica_manga_corta_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camisetas_camiseta_tecnica_manga_corta_tallaje_masculino": {
+    "nombre": "Camiseta Técnica manga Corta Tallaje masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_masculino/camiseta_tecnica_manga_corta_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_masculino/camiseta_tecnica_manga_corta_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_masculino/camiseta_tecnica_manga_corta_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_tecnica_manga_corta_tallaje_masculino/camiseta_tecnica_manga_corta_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "camiseta_térmica_de_manga_larga": {
+    "nombre": "Camiseta térmica de manga larga",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/camisetas/camiseta_térmica_de_manga_larga/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_térmica_de_manga_larga/camiseta_termica_de_manga_larga_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_térmica_de_manga_larga/camiseta_termica_de_manga_larga_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_térmica_de_manga_larga/camiseta_termica_de_manga_larga_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_térmica_de_manga_larga/camiseta_termica_de_manga_larga_trasera.png"
+      }
+    }
+  },
+  "camiseta_trabajo_alta_visibilidad": {
+    "nombre": "Camiseta trabajo alta visibilidad",
+    "valor": "Logotipo_Negro.png",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/camisetas/camiseta_trabajo_alta_visibilidad/info.txt",
+    "logos":0,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/camisetas/camiseta_trabajo_alta_visibilidad/camiseta_trabajo_alta_visibilidad_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/camisetas/camiseta_trabajo_alta_visibilidad/camiseta_trabajo_alta_visibilidad_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/camisetas/camiseta_trabajo_alta_visibilidad/camiseta_trabajo_alta_visibilidad_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/camisetas/camiseta_trabajo_alta_visibilidad/camiseta_trabajo_alta_visibilidad_trasera.png"
+      }
+    }
+  },
+  "casco_de_motoserristamotodesbrozador": {
+    "nombre": "Casco de motoserristamotodesbrozador",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/casco_de_motoserristamotodesbrozador/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/casco_de_motoserristamotodesbrozador/casco_de_motoserristamotodesbrozador_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/casco_de_motoserristamotodesbrozador/casco_de_motoserristamotodesbrozador_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/casco_de_motoserristamotodesbrozador/casco_de_motoserristamotodesbrozador_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/casco_de_motoserristamotodesbrozador/casco_de_motoserristamotodesbrozador_trasera.png"
+      }
+    }
+  },
+  "casco_de_proteccion_para_obra": {
+    "nombre": "Casco de proteccion para obra",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/casco_de_motoserristamotodesbrozador/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/casco_de_proteccion_para_obra/casco_de_proteccion_para_obra_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/casco_de_proteccion_para_obra/casco_de_proteccion_para_obra_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/casco_de_proteccion_para_obra/casco_de_proteccion_para_obra_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/casco_de_proteccion_para_obra/casco_de_proteccion_para_obra_trasera.png"
+      }
+    }
+  },
+  "cazadora_cazadora_bordada": {
+    "nombre": "Cazadora Bordada",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/cazadora/cazadora_bordada/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/cazadora/cazadora_bordada/cazadora_bordada_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/cazadora/cazadora_bordada/cazadora_bordada_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/cazadora/cazadora_bordada/cazadora_bordada_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/cazadora/cazadora_bordada/cazadora_bordada_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)": {
+    "nombre": "Chaleco reflectante (con serigrafia a especificar logo gesplan)",
+    "valor": "Logotipo_Negro.png",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/chalecos/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)/info.txt",
+    "logos": 0,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chalecos/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chalecos/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chalecos/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chalecos/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)/chaleco_reflectante_(con_serigrafia_a_especificar,_logo_gesplan)_trasera.png"
+      }
+    }
+  },
+  "chalecos_chalecos_para_tecnicos_tallaje_femenino": {
+    "nombre": "Chalecos Para Tecnicos Tallaje Femenino",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chalecos/chalecos_para_tecnicos_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_femenino/chalecos_para_tecnicos_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_femenino/chalecos_para_tecnicos_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_femenino/chalecos_para_tecnicos_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_femenino/chalecos_para_tecnicos_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chalecos_chalecos_para_tecnicos_tallaje_masculino": {
+    "nombre": "Chalecos Para Tecnicos Tallaje Masculino",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/chalecos_para_tecnicos_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/chalecos_para_tecnicos_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/chalecos_para_tecnicos_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/chalecos_para_tecnicos_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_alta_visibilidad": {
+    "nombre": "Chaqueta Alta Visibilidad",
+    "valor": "Logotipo_Negro.png",
+    "text": "prendas/chaqueta/chaqueta_alta_visibilidad/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad/chaqueta_alta_visibilidad_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad/chaqueta_alta_visibilidad_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad/chaqueta_alta_visibilidad_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad/chaqueta_alta_visibilidad_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_alta_visibilidad_verde": {
+    "nombre": "Chaqueta Alta Visibilidad Verde",
+    "valor": "Logotipo_Negro.png",
+    "text": "prendas/chaqueta/chaqueta_alta_visibilidad_verde/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad_verde/chaqueta_alta_visibilidad_verde_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad_verde/chaqueta_alta_visibilidad_verde_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad_verde/chaqueta_alta_visibilidad_verde_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_alta_visibilidad_verde/chaqueta_alta_visibilidad_verde_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "chaqueta_chaqueta_cortaviento": {
+    "nombre": "Chaqueta Corta Viento",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chaqueta/chaqueta_cortaviento/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_cortaviento/chaqueta_cortaviento_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_cortaviento/chaqueta_cortaviento_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_cortaviento/chaqueta_cortaviento_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_cortaviento/chaqueta_cortaviento_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_parka": {
+    "nombre": "Chaqueta Parka",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chaqueta/chaqueta_parka/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_parka/chaqueta_parka_con_serigrafia_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_parka/chaqueta_parka_con_serigrafia_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_parka/chaqueta_parka_con_serigrafia_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_parka/chaqueta_parka_con_serigrafia_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_parka_alta_visibilidad": {
+    "nombre": "Chaqueta Parka Alta Visibilidad",
+    "valor": "Logotipo_Negro.png",
+    "text": "prendas/chaqueta/chaqueta_parka_alta_visibilidad/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_parka_alta_visibilidad/chaqueta_parka_alta_visibilidad_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_parka_alta_visibilidad/chaqueta_parka_alta_visibilidad_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_parka_alta_visibilidad/chaqueta_parka_alta_visibilidad_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_parka_alta_visibilidad/chaqueta_parka_alta_visibilidad_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_polar": {
+    "nombre": "Chaqueta Polar",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chalecos/chalecos_para_tecnicos_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/chaqueta_polar/chaqueta_polar_una_varias_serigrafias_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/chaqueta_polar/chaqueta_polar_una_varias_serigrafias_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/chaqueta_polar/chaqueta_polar_una_varias_serigrafias_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/chaqueta_polar/chaqueta_polar_una_varias_serigrafias_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "chaqueta_chaqueta_sofshell": {
+    "nombre": "Chaqueta Sofshell",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/chaqueta/softshell/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/chaqueta/softshell/chaqueta_softshell_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/chaqueta/softshell/chaqueta_softshell_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/chaqueta/softshell/chaqueta_softshell_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/chaqueta/softshell/chaqueta_softshell_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "impermeable_chubasquero_alta_visibilidad": {
+    "nombre": "Chubasquero Alta Visibilidad",
+    "valor": "Logotipo_Negro.png",
+    "text": "prendas/impermeables/chubasquero_alta_visibilidad/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/impermeables/chubasquero_alta_visibilidad/chubasquero_alta_visibilidad_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/impermeables/chubasquero_alta_visibilidad/chubasquero_alta_visibilidad_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/impermeables/chubasquero_alta_visibilidad/chubasquero_alta_visibilidad_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/impermeables/chubasquero_alta_visibilidad/chubasquero_alta_visibilidad_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "impermeable_chubasquero_no_reflectante": {
+    "nombre": "Chubasquero No Reflectante",
+    "valor": "Logotipo_Negro.png",
+    "logos": 99,
+    "text": "prendas/impermeables/chubasquero_no_reflectante/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/impermeables/chubasquero_no_reflectante/chubasquero_no_reflectante_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/impermeables/chubasquero_no_reflectante/chubasquero_no_reflectante_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/impermeables/chubasquero_no_reflectante/chubasquero_no_reflectante_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/impermeables/chubasquero_no_reflectante/chubasquero_no_reflectante_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "cubregafas": {
+    "nombre": "Cubre gafas",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/cubregafas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/cubregafas/cubregafas_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/cubregafas/cubregafas_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/cubregafas/cubregafas_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/cubregafas/cubregafas_trasera.png"
+      }
+    }
+  },
+  "delantal_pvc_con_peto": {
+    "nombre": "Delantal pvc con peto",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/delantal_pvc_con_peto/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/delantal_pvc_con_peto/delantal_pvc_con_peto_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/delantal_pvc_con_peto/delantal_pvc_con_peto_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/delantal_pvc_con_peto/delantal_pvc_con_peto_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/delantal_pvc_con_peto/delantal_pvc_con_peto_trasera.png"
+      }
+    }
+  },
+  "gafas_de_proteccion_(para_impactos)": {
+    "nombre": "Gafas de proteccion (para_impactos)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/gafas/gafas_de_proteccion_(para_impactos)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gafas/gafas_de_proteccion_(para_impactos)/gafas_de_proteccion_(para_impactos)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gafas/gafas_de_proteccion_(para_impactos)/gafas_de_proteccion_(para_impactos)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gafas/gafas_de_proteccion_(para_impactos)/gafas_de_proteccion_(para_impactos)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gafas/gafas_de_proteccion_(para_impactos)/gafas_de_proteccion_(para impactos)_trasera.png"
+      }
+    }
+  },
+  "gafas_de_proteccion_montura_integral_(panoramicas)": {
+    "nombre": "Gafas de protección montura integral (panorámicas)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/gafas/gafas_de_proteccion_montura_integral_(panoramicas)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gafas/gafas_de_proteccion_montura_integral_(panoramicas)/gafas_de_proteccion_montura_integral_(panoramicas)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gafas/gafas_de_proteccion_montura_integral_(panoramicas)/gafas_de_proteccion_montura_integral_(panoramicas)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gafas/gafas_de_proteccion_montura_integral_(panoramicas)/gafas_de_proteccion_montura_integral_(panoramicas)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gafas/gafas_de_proteccion_montura_integral_(panoramicas)/gafas_de_proteccion_montura_integral_(panoramicas)_trasera.png"
+      }
+    }
+  },
+  "gafas_para_impactos_y_proteccion_solar": {
+    "nombre": "Gafas para impactos y proteccion solar",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/gafas/gafas_para_impactos_y_proteccion_solar/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar/gafas_para_impactos_y_proteccion_solar_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar/gafas_para_impactos_y_proteccion_solar_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar/gafas_para_impactos_y_proteccion_solar_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar/gafas_para_impactos_y_proteccion_solar_trasera.png"
+      }
+    }
+  },
+  "gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma": {
+    "nombre": "Gafas para impactos y protección solar con refuerzo de espuma",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/gafas/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gafas/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma/gafas_para_impactos_y_proteccion_solar_con_refuerzo_de_espuma_trasera.png"
+      }
+    }
+  },
+  "gorros_gorra_con_visera_serigrafiada": {
+    "nombre": "Gorra Con Visera",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/gorros/gorra_con_visera_serigrafiada/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gorros/gorra_con_visera_serigrafiada/gorra_con_visera_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gorros/gorra_con_visera_serigrafiada/gorra_con_visera_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gorros/gorra_con_visera_serigrafiada/gorra_con_visera_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gorros/gorra_con_visera_serigrafiada/gorra_con_visera_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "gorros_gorra_con_visera_y_cubrenucas": {
+    "nombre": "Gorra Con Visera Y Cubrenucas",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/gorros/gorra_con_visera_y_cubrenucas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gorros/gorra_con_visera_y_cubrenucas/gorra_con_visera_y_cubrenucas_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gorros/gorra_con_visera_y_cubrenucas/gorra_con_visera_y_cubrenucas_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gorros/gorra_con_visera_y_cubrenucas/gorra_con_visera_y_cubrenucas_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gorros/gorra_con_visera_y_cubrenucas/gorra_con_visera_y_cubrenucas_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "gorros_gorro_ala_ancha": {
+    "nombre": "Gorra de ala ancha",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/gorros/gorro_ala_ancha/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gorros/gorro_ala_ancha/gorro_ala_ancha_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gorros/gorro_ala_ancha/gorro_ala_ancha_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gorros/gorro_ala_ancha/gorro_ala_ancha_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gorros/gorro_ala_ancha/gorro_ala_ancha_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "gorros_gorro_ala_ancha_cubrenucas": {
+    "nombre": "Gorra de ala ancha cubrenucas",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/gorros/gorro_ala_ancha_cubrenucas/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gorros/gorro_ala_ancha_cubrenucas/gorro_ala_ancha_cubrenucas_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gorros/gorro_ala_ancha_cubrenucas/gorro_ala_ancha_cubrenucas_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gorros/gorro_ala_ancha_cubrenucas/gorro_ala_ancha_cubrenucas_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gorros/gorro_ala_ancha_cubrenucas/gorro_ala_ancha_cubrenucas_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "gorros_gorro_polar": {
+    "nombre": "Gorro Polar",
+    "valor": "",
+    "text": "prendas/gorros/gorro_polar/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/gorros/gorro_polar/gorro_polar_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/gorros/gorro_polar/gorro_polar_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/gorros/gorro_polar/gorro_polar_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/gorros/gorro_polar/gorro_polar_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "guante_flexibles_anticorte_proteccion_nivel_f": {
+    "nombre": "Guante flexibles anticorte proteccion nivel f",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guante_flexibles_anticorte_proteccion_nivel_f/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guante_flexibles_anticorte_proteccion_nivel_f/guante_flexibles_anticorte_proteccion_nivel_f_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guante_flexibles_anticorte_proteccion_nivel_f/guante_flexibles_anticorte_proteccion_nivel_f_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guante_flexibles_anticorte_proteccion_nivel_f/guante_flexibles_anticorte_proteccion_nivel_f_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guante_flexibles_anticorte_proteccion_nivel_f/guante_flexibles_anticorte_proteccion_nivel_f_trasera.png"
+      }
+    }
+  },
+  "guantes_actuacion_ambiental": {
+    "nombre": "Guantes actuación ambiental",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_actuacion_ambiental/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_actuacion_ambiental/guantes_actuacion_ambiental_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_actuacion_ambiental/guantes_actuacion_ambiental_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_actuacion_ambiental/guantes_actuacion_ambiental_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_actuacion_ambiental/guantes_actuacion_ambiental_trasera.png"
+      }
+    }
+  },
+  "guantes_con_proteccion_anticorte_clase_1": {
+    "nombre": "Guantes con protección anticorte clase 1",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_con_proteccion_anticorte_clase_1/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_1/guantes_con_proteccion_anticorte_clase_1_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_1/guantes_con_proteccion_anticorte_clase_1_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_1/guantes_con_proteccion_anticorte_clase_1_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_1/guantes_con_proteccion_anticorte_clase_1_trasera.png"
+      }
+    }
+  },
+  "guantes_con_proteccion_anticorte_clase_2": {
+    "nombre": "Guantes con protección anticorte clase 2",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_con_proteccion_anticorte_clase_2/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_2/guantes_con_proteccion_anticorte_clase_2_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_2/guantes_con_proteccion_anticorte_clase_2_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_2/guantes_con_proteccion_anticorte_clase_2_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_con_proteccion_anticorte_clase_2/guantes_con_proteccion_anticorte_clase_2_trasera.png"
+      }
+    }
+  },
+  "guantes_de_albanileria": {
+    "nombre": "Guantes de albañilería",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_de_albanileria/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_de_albanileria/guantes_de_albanileria_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_de_albanileria/guantes_de_albanileria_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_de_albanileria/guantes_de_albanileria_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_de_albanileria/guantes_de_albanileria_trasera.png"
+      }
+    }
+  },
+  "guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)": {
+    "nombre": "Guantes de albanilería y actuación ambiental (ambientes húmedos)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)/guantes_de_albanileria_y_actuacion_ambiental_(ambientes_humedos)_trasera.png"
+      }
+    }
+  },
+  "guantes_de_jardineria": {
+    "nombre": "Guantes de jardinería",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_de_jardineria/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_de_jardineria/guantes_de_jardineria_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_de_jardineria/guantes_de_jardineria_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_de_jardineria/guantes_de_jardineria_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_de_jardineria/guantes_de_jardineria_trasera.png"
+      }
+    }
+  },
+  "guantes_de_pedrero": {
+    "nombre": "Guantes de pedrero",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_de_pedrero/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_de_pedrero/guantes_de_pedrero_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_de_pedrero/guantes_de_pedrero_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_de_pedrero/guantes_de_pedrero_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_de_pedrero/guantes_de_pedrero_trasera.png"
+      }
+    }
+  },
+  "guantes_forestales_cortos": {
+    "nombre": "Guantes forestales cortos",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_forestales_cortos/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_forestales_cortos/guantes_forestales_cortos_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_forestales_cortos/guantes_forestales_cortos_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_forestales_cortos/guantes_forestales_cortos_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_forestales_cortos/guantes_forestales_cortos_trasera.png"
+      }
+    }
+  },
+  "guantes_forestales_largos": {
+    "nombre": "Guantes forestales largos",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_forestales_largos/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_forestales_largos/guantes_forestales_largos_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_forestales_largos/guantes_forestales_largos_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_forestales_largos/guantes_forestales_largos_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_forestales_largos/guantes_forestales_largos_trasera.png"
+      }
+    }
+  },
+  "guantes_riesgo_quimicobiologico_desechables_(con_polvo)": {
+    "nombre": "Guantes riesgo quimicobiológico desechables (con polvo)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(con_polvo)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(con_polvo)/guantes_riesgo_quimicobiologico_desechables_(con_polvo)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(con_polvo)/guantes_riesgo_quimicobiologico_desechables_(con_polvo)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(con_polvo)/guantes_riesgo_quimicobiologico_desechables_(con_polvo)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(con_polvo)/guantes_riesgo_quimicobiologico_desechables_(con_polvo)_trasera.png"
+      }
+    }
+  },
+  "guantes_riesgo_quimicobiologico_desechables_(sin_polvo)": {
+    "nombre": "Guantes riesgo quimicobiológico desechables (sin polvo)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)/guantes_riesgo_quimicobiologico_desechables_(sin_polvo)_trasera.png"
+      }
+    }
+  },
+  "guantes_riesgo_quimicobiologico_tipo_a": {
+    "nombre": "Guantes riesgo quimicobiológico tipo a",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_a/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_a/guantes_riesgo_quimicobiologico_tipo_a_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_a/guantes_riesgo_quimicobiologico_tipo_a_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_a/guantes_riesgo_quimicobiologico_tipo_a_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_a/guantes_riesgo_quimicobiologico_tipo_a_trasera.png"
+      }
+    }
+  },
+  "guantes_riesgo_quimicobiologico_tipo_b": {
+    "nombre": "Guantes riesgo quimicobiológico tipo b",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_b/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_b/guantes_riesgo_quimicobiologico_tipo_b_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_b/guantes_riesgo_quimicobiologico_tipo_b_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_b/guantes_riesgo_quimicobiologico_tipo_b_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_riesgo_quimicobiologico_tipo_b/guantes_riesgo_quimicobiologico_tipo_b_trasera.png"
+      }
+    }
+  },
+  "guantes_termicos_de_trabajo": {
+    "nombre": "Guantes térmicos de trabajo",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/guantes/guantes_termicos_de_trabajo/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/guantes/guantes_termicos_de_trabajo/guantes_termicos_de_trabajo_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/guantes/guantes_termicos_de_trabajo/guantes_termicos_de_trabajo_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/guantes/guantes_termicos_de_trabajo/guantes_termicos_de_trabajo_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/guantes/guantes_termicos_de_trabajo/guantes_termicos_de_trabajo_trasera.png"
+      }
+    }
+  },
+  "manguito_(tipo_media)": {
+    "nombre": "Manguito (tipo media)",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/manguitos/manguito_(tipo_media)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/manguitos/manguito_(tipo_media)/manguito_(tipo_media)_lateral_a.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/manguitos/manguito_(tipo_media)/manguito_(tipo_media)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/manguitos/manguito_(tipo_media)/manguito_(tipo_media)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/manguitos/manguito_(tipo_media)/manguito_(tipo_media)_lateral_a.png"
+      }
+    }
+  },
+  "manguito_anticorte": {
+    "nombre": "Manguito anticorte",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/manguitos/manguito_anticorte/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/manguitos/manguito_anticorte/manguito_anticorte_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/manguitos/manguito_anticorte/manguito_anticorte_delantera.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/manguitos/manguito_anticorte/manguito_anticorte_delantera.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/manguitos/manguito_anticorte/manguito_anticorte_delantera.png"
+      }
+    }
+  },
+  "mochilas_mochila_campo": {
+    "nombre": "Mochila de Campo",
+    "valor": "",
+    "text": "prendas/mochilas/mochila_campo/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/mochilas/mochila_campo/mochila_campo_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/mochilas/mochila_campo/mochila_campo_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/mochilas/mochila_campo/mochila_campo_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/mochilas/mochila_campo/mochila_campo_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "mochilas_mochila_oficina": {
+    "nombre": "Mochila de Oficina",
+    "valor": "",
+    "text": "prendas/mochilas/mochila_oficina/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/mochilas/mochila_oficina/mochila_oficina_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/mochilas/mochila_oficina/mochila_oficina_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/mochilas/mochila_oficina/mochila_oficina_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/mochilas/mochila_oficina/mochila_oficina_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "mono_impermeable": {
+    "nombre": "Mono impermeable",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/monos/mono_impermeable/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/monos/mono_impermeable/mono_impermeable_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/monos/mono_impermeable/mono_impermeable_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/monos/mono_impermeable/mono_impermeable_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/monos/mono_impermeable/mono_impermeable_trasera.png"
+      }
+    }
+  },
+  "mono_riesgo_quimicobiologico": {
+    "nombre": "Mono riesgo quimicobiológico",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/monos/mono_riesgo_quimicobiologico/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/monos/mono_riesgo_quimicobiologico/mono_riesgo_quimicobiologico_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/monos/mono_riesgo_quimicobiologico/mono_riesgo_quimicobiologico_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/monos/mono_riesgo_quimicobiologico/mono_riesgo_quimicobiologico_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/monos/mono_riesgo_quimicobiologico/mono_riesgo_quimicobiologico_trasera.png"
+      }
+    }
+  },
+  "pantalon_con_peto_clase_1": {
+    "nombre": "Pantalon con peto clase 1",
+    "valor": "",
+    "text": "prendas/pantalones/pantalon_con_peto_clase_1/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_1/pantalon_con_peto_clase_1_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_1/pantalon_con_peto_clase_1_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_1/pantalon_con_peto_clase_1_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_1/pantalon_con_peto_clase_1_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "pantalon_con_peto_clase_2": {
+    "nombre": "Pantalon con peto clase 2",
+    "valor": "",
+    "text": "prendas/pantalones/pantalon_con_peto_clase_2/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_2/pantalon_con_peto_clase_2_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_2/pantalon_con_peto_clase_2_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_2/pantalon_con_peto_clase_2_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalon_con_peto_clase_2/pantalon_con_peto_clase_2_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "pantalon_elastico_alta_visibilidad,_tallaje_femenino": {
+    "nombre": "Pantalón elástico alta visibilidad, tallaje femenino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalon_con_peto_clase_2/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_femenino/pantalon_elastico_alta_visibilidad,_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_femenino/pantalon_elastico_alta_visibilidad,_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_femenino/pantalon_elastico_alta_visibilidad,_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_femenino/pantalon_elastico_alta_visibilidad,_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalon_elastico_alta_visibilidad,_tallaje_masculino": {
+    "nombre": "Pantalón elástico alta visibilidad, tallaje masculino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_masculino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_masculino/pantalon_elastico_alta_visibilidad,_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_masculino/pantalon_elastico_alta_visibilidad,_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_masculino/pantalon_elastico_alta_visibilidad,_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalon_elastico_alta_visibilidad,_tallaje_masculino/pantalon_elastico_alta_visibilidad,_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_pantalones_trabajo_eslastico_av_tallaje_femenino": {
+    "nombre": "Pantalon Elástico Av Tallaje Femenino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_femenino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_femenino/pantalones_trabajo_elastico_av_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_femenino/pantalones_trabajo_elastico_av_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_femenino/pantalones_trabajo_elastico_av_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_femenino/pantalones_trabajo_elastico_av_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "pantalones_pantalones_trabajo_eslastico_av_tallaje_masculino": {
+    "nombre": "Pantalon Elástico Av Tallaje Masculino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_masculino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_masculino/pantalones_trabajo_elastico_av_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_masculino/pantalones_trabajo_elastico_av_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_masculino/pantalones_trabajo_elastico_av_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_trabajo_elastico_av_tallaje_masculino/pantalones_trabajo_elastico_av_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "pantalones_pantalones_refuerzo_culera_tallaje_femenino": {
+    "nombre": "Pantalon Refuerzo Culera Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_femenino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_femenino/pantalones_refuerzo_culera_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_femenino/pantalones_refuerzo_culera_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_femenino/pantalones_refuerzo_culera_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_femenino/pantalones_refuerzo_culera_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_pantalones_refuerzo_culera_tallaje_masculino": {
+    "nombre": "Pantalon Refuerzo Culera Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_masculino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_masculino/pantalones_refuerzo_culera_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_masculino/pantalones_refuerzo_culera_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_masculino/pantalones_refuerzo_culera_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_refuerzo_culera_tallaje_masculino/pantalones_refuerzo_culera_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_pantalones_tallaje_femenino": {
+    "nombre": "Pantalon Tallaje Femenino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_tallaje_femenino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_tallaje_femenino/pantalones_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_tallaje_femenino/pantalones_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_tallaje_femenino/pantalones_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_tallaje_femenino/pantalones_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_pantalones_tallaje_masculino": {
+    "nombre": "Pantalon Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/pantalones/pantalones_tallaje_masculino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_tallaje_masculino/pantalones_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_tallaje_masculino/pantalones_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_tallaje_masculino/pantalones_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_tallaje_masculino/pantalones_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_pantalones_verticales_trabajo_altura_tallaje_femenino": {
+    "nombre": "Pantalon Vertical Trabajo Altura Tallaje Femenino",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_verticales_trabajo_altura_tallaje_femenino/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_verticales_trabajo_altura_tallaje_femenino/pantalones_verticales_trabajo_altura_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_verticales_trabajo_altura_tallaje_femenino/pantalones_verticales_trabajo_altura_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_verticales_trabajo_altura_tallaje_femenino/pantalones_verticales_trabajo_altura_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_verticales_trabajo_altura_tallaje_femenino/pantalones_verticales_trabajo_altura_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)": {
+    "nombre": "Pantalones verticales escaladores, tallaje femenino (sin serigrafía)",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_femenino_(sin_serigrafia)_trasera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)": {
+    "nombre": "Pantalones verticales escaladores, tallaje masculino (sin serigrafía)",
+    "valor": "",
+    "text": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/pantalones/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)/pantalones_verticales_escaladores,_tallaje_masculino_(sin_serigrafia)_delantera.png"
+      }
+    },
+    "proveedor": "Cantillana Canarias, S.L."
+  },
+  "polos_polo_manga_corta_tallaje_femenino": {
+    "nombre": "Polo Manga Corta Tallaje Femenino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/polos/polo_manga_corta_tallaje_femenino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_femenino/polo_manga_corta_tallaje_femenino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_femenino/polo_manga_corta_tallaje_femenino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_femenino/polo_manga_corta_tallaje_femenino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_femenino/polo_manga_corta_tallaje_femenino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "polos_polo_manga_corta_tallaje_masculino": {
+    "nombre": "Polo Manga Corta Tallaje Masculino",
+    "valor": "Logotipo_Color_principal.png",
+    "text": "prendas/polos/polo_manga_corta_tallaje_masculino/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_masculino/polo_manga_corta_tallaje_masculino_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_masculino/polo_manga_corta_tallaje_masculino_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_masculino/polo_manga_corta_tallaje_masculino_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/polos/polo_manga_corta_tallaje_masculino/polo_manga_corta_tallaje_masculino_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "polos_polo_tecnico_tap": {
+    "nombre": "Polo Tecnico Tap",
+    "valor": "Logotipo_Blanco.png",
+    "text": "prendas/polos/polo_tecnico_tap/info.txt",
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/polos/polo_tecnico_tap/polo_tecnico_tap_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/polos/polo_tecnico_tap/polo_tecnico_tap_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/polos/polo_tecnico_tap/polo_tecnico_tap_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/polos/polo_tecnico_tap/polo_tecnico_tap_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "poncho_poncho_impermeable": {
+    "nombre": "Poncho Impermeable",
+    "valor": "",
+    "text": "prendas/poncho_impermeable/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/poncho_impermeable/poncho_impermeable_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/poncho_impermeable/poncho_impermeable_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/poncho_impermeable/poncho_impermeable_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/poncho_impermeable/poncho_impermeable_trasera.png"
+      }
+    },
+    "proveedor": "Sebastian Tejera, S.L."
+  },
+  "protector_auditivo_orejeras": {
+    "nombre": "Protector auditivo orejeras",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/protectores/protector_auditivo_orejeras/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/protectores/protector_auditivo_orejeras/protector_auditivo_orejeras_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/protectores/protector_auditivo_orejeras/protector_auditivo_orejeras_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/protectores/protector_auditivo_orejeras/protector_auditivo_orejeras_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/protectores/protector_auditivo_orejeras/protector_auditivo_orejeras_trasera.png"
+      }
+    }
+  },
+  "protector_auditivo_topones": {
+    "nombre": "Protector auditivo tapones",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/protectores/protector_auditivo_tapones/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/protectores/protector_auditivo_tapones/protector_auditivo_tapones_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/protectores/protector_auditivo_tapones/protector_auditivo_tapones_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/protectores/protector_auditivo_tapones/protector_auditivo_tapones_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/protectores/protector_auditivo_tapones/protector_auditivo_tapones_trasera.png"
+      }
+    }
+  },
+  "semimascara": {
+    "nombre": "Semi máscara",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/semimascara/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/semimascara/semimascara_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/semimascara/semimascara_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/semimascara/semimascara_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/semimascara/semimascara_trasera.png"
+      }
+    }
+  },
+   "mascara_completa": {
+    "nombre": "Máscara completa",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/mascaras/mascara_completa/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/mascaras/mascara_completa/mascara_completa_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/mascaras/mascara_completa/mascara_completa_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/mascaras/mascara_completa/mascara_completa_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/mascaras/mascara_completa/mascara_completa_trasera.png"
+      }
+    }
+  },
+    "mascarilla_autofiltrante": {
+    "nombre": "Mascarilla autofiltrante",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/mascaras/mascarilla_autofiltrante/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/mascaras/mascarilla_autofiltrante/mascarilla_autofiltrante_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/mascaras/mascarilla_autofiltrante/mascarilla_autofiltrante_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/mascaras/mascarilla_autofiltrante/mascarilla_autofiltrante_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/mascaras/mascarilla_autofiltrante/mascarilla_autofiltrante_trasera.png"
+      }
+    }
+  },
+  "zahon_clase_1": {
+    "nombre": "Zahon clase 1",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/zahones/zahon_clase_1/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/zahones/zahon_clase_1/zahon_clase_1_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/zahones/zahon_clase_1/zahon_clase_1_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/zahones/zahon_clase_1/zahon_clase_1_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/zahones/zahon_clase_1/zahon_clase_1_trasera.png"
+      }
+    }
+  },
+  "zahon_clase_2": {
+    "nombre": "Zahon clase 2",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/zahones/zahon_clase_2/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/zahones/zahon_clase_2/zahon_clase_2_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/zahones/zahon_clase_2/zahon_clase_2_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/zahones/zahon_clase_2/zahon_clase_2_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/zahones/zahon_clase_2/zahon_clase_2_trasera.png"
+      }
+    }
+  },
+  "zapato_de_seguridad_incluye_riesgos_mecanicos_en345": {
+    "nombre": "Zapato de seguridad incluye riesgos mecánicos en345",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/zapatos/zapato_de_seguridad_incluye_riesgos_mecanicos_en345/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_incluye_riesgos_mecanicos_en345/zapato_de_seguridad_incluye_riesgos_mecanicos_en345_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_incluye_riesgos_mecanicos_en345/zapato_de_seguridad_incluye_riesgos_mecanicos_en345_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_incluye_riesgos_mecanicos_en345/zapato_de_seguridad_incluye_riesgos_mecanicos_en345_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_incluye_riesgos_mecanicos_en345/zapato_de_seguridad_incluye_riesgos_mecanicos_en345_trasera.png"
+      }
+    }
+  },
+  "zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347": {
+    "nombre": "Zapato de seguridad no incluye riesgos mecánicos en347",
+    "valor": "",
+    "proveedor": "Cantillana Canarias S.L.",
+    "text": "prendas/zapatos/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347/info.txt",
+    "logos": 99,
+    "vistas": {
+      "frontal": {
+        "nombre": "Frontal",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347_delantera.png"
+      },
+      "perfilIzq": {
+        "nombre": "Perfil Izquierdo",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347_lateral_a.png"
+      },
+      "perfilDer": {
+        "nombre": "Perfil Derecho",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347_lateral_b.png"
+      },
+      "trasera": {
+        "nombre": "Trasera",
+        "ruta": "prendas/zapatos/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347/zapato_de_seguridad_no_incluye_riesgos_mecanicos_en347_trasera.png"
+      }
+    }
+  }
+}

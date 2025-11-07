@@ -1,0 +1,264 @@
+.camiseta-editor {
+  width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.camiseta-img {
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+}
+
+/* ===== Texto flotante (caja editable) ===== */
+.texto-flotante {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  /* deja espacio para botón cerrar (arriba dcha.) y asa de tamaño (abajo dcha.) */
+  padding: 4px 22px 6px 8px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  border: 1px dashed #2196f3;
+  background-color: rgba(255, 255, 255, 0.001);
+  min-width: 80px;
+  min-height: 24px;
+  cursor: move;
+  user-select: none;
+  gap: 2px;
+  text-align: center;
+  resize: none;
+  overflow: hidden; /* evita que el contenido se salga visualmente */
+}
+
+/* Compatibilidad por si aún usas input de una línea en algún sitio */
+.texto-flotante input.texto-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: inherit;
+}
+
+/* Multilínea: ocupa toda la caja y respeta saltos de línea */
+.texto-flotante textarea.texto-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  resize: none;                 /* redimensionas con el handle */
+  padding: 0;                   /* el padding está en .texto-flotante */
+  white-space: pre-wrap;        /* respeta saltos de línea */
+  overflow-wrap: anywhere;      /* rompe palabras largas si hace falta */
+  word-break: break-word;
+  user-select: text;            /* edición dentro del textarea */
+  pointer-events: auto;
+  cursor: text;
+  overflow: auto;
+}
+
+/* Botón cerrar del texto */
+.texto-flotante .btn-cerrar {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(13, 0, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle mover (grip) */
+.texto-flotante .handle-mover {
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  background: transparent;   /* sin fondo blanco */
+  cursor: grab;
+  user-select: none;
+  z-index: 13;
+}
+.texto-flotante .handle-mover:active { cursor: grabbing; }
+.texto-flotante .handle-mover::before {
+  content: "";
+  position: absolute;
+  inset: 2px;                /* margen interno */
+  background:
+    radial-gradient(#2196f3 1.3px, transparent 1.3px) 0 0/6px 6px,
+    radial-gradient(#2196f3 1.3px, transparent 1.3px) 3px 3px/6px 6px;
+  pointer-events: none;
+}
+
+/* Asa de resize (texto e imágenes) */
+.texto-flotante .handle-resize,
+.logo-flotante .handle-resize {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 14px;
+  height: 14px;
+  background: #2196f3;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: se-resize;
+  z-index: 12;
+}
+
+/* ===== Imágenes flotantes (LOGOS) ===== */
+.logo-flotante {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+  /* IMPORTANTE: no recortar controles y quedar por encima de flechas */
+  overflow: visible;   /* antes: hidden */
+  background: rgba(255, 255, 255, 0.001);
+  z-index: 20;         /* por encima de .navegador (10) */
+}
+
+.logo-flotante .logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* que no se corte la imagen */
+  display: block;
+}
+
+/* Botón cerrar del logo (fuera de la caja, visible) */
+.logo-flotante .btn-cerrar {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(13, 0, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Asa de resize del logo (fuera, visible) */
+.logo-flotante .handle-resize {
+  right: -7px;
+  bottom: -7px;
+  z-index: 21;
+}
+
+.logo-flotante .input-file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ===== Navegador (flechas) ===== */
+.navegador {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* las flechas quedan por debajo del logo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.flecha-izquierda { left: -50px; }
+.flecha-derecha  { right: -50px; }
+.navegador:hover { background-color: #f0f0f0; }
+
+/* ===== Overlay Generando PDF ===== */
+.pdf-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-box { text-align: center; }
+
+/* ===== Panel derecho e info ===== */
+.contenedor-texto {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contenido-archivo {
+  white-space: pre-wrap;
+  font-family: monospace;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.proveedor-input {
+  white-space: pre-wrap;
+  font-family: monospace;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Estilos adicionales para mejorar el layout del panel derecho */
+.bg-white.shadow.rounded.p-4.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+.bg-white.shadow.rounded.p-4.h-100 > *:last-child {
+  margin-top: auto;
+}

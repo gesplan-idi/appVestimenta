@@ -1,0 +1,25 @@
+<h1>Usuarios</h1>
+
+<p style="font-size:12px;color:#666">
+  Último evento SSE: <b>{{ lastEvent() }}</b>
+</p>
+
+<div *ngIf="loading()">Cargando usuarios…</div>
+<div *ngIf="error()" style="color:red">Error: {{ error() }}</div>
+
+<ul *ngIf="users().length">
+  <li *ngFor="let u of users()">
+    <strong>{{ u.nombre ?? 'Sin nombre' }}</strong>
+    <span *ngIf="u.apellidos"> — {{ u.apellidos }}</span>
+    <small *ngIf="u.code" style="color:#888"> ({{ u.code }})</small>
+  </li>
+</ul>
+
+<!-- <div style="margin-top:8px;">
+  <button type="button" (click)="cargarUsuarios()">Recargar manual</button>
+  <button type="button" (click)="cerrarSse()">Cerrar SSE</button>
+</div> -->
+
+<p style="margin-top:12px;color:#666">
+  Abre la consola (F12) → pestaña <b>Console</b> para ver el flujo SSE2.
+</p>

@@ -1,0 +1,37 @@
+/* Plano */
+.plan { width: 100%; }
+.plan-svg { width: 100%; height: auto; display: block; }
+.base-image { pointer-events: none; }
+
+/* Hotspots invisibles clicables */
+.hotspot {
+  fill: rgba(0,0,0,0);
+  stroke: transparent;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* Modal compacto centrado (Bootstrap) */
+.modal-compact .modal-dialog { --bs-modal-width: 320px; }
+.modal-compact .modal-content { border-radius: 10px; }
+.modal-compact .modal-header,
+.modal-compact .modal-footer { padding-top: .25rem; padding-bottom: .25rem; }
+.modal-compact .modal-body { padding-top: .5rem; padding-bottom: .5rem; }
+.modal-compact .modal-title { font-size: .95rem; margin: 0; }
+.modal-compact .form-label.small { font-size: .78rem; color: #6c757d; margin-bottom: .25rem; }
+.modal-compact .form-control-sm { font-size: .875rem; padding-top: .25rem; padding-bottom: .25rem; }
+.modal-compact .form-check-inline .form-check-input { margin-top: .15rem; margin-right: .35rem; }
+.modal-compact .btn.btn-sm { padding: .25rem .5rem; }
+
+/* Backdrop */
+.modal-backdrop.show { opacity: .5; }
+.plan-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  clip-path: inset(40px 20px 60px 10px); /* recorta arriba, derecha, abajo, izquierda */
+}
+.plan {
+  overflow: hidden;    /* oculta barras de scroll */
+}
+

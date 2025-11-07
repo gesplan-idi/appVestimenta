@@ -1,0 +1,338 @@
+<div *ngIf="jsonInvalido" class="alert alert-danger text-center" style="padding: 2rem; font-size: 1.2rem;">
+  ⚠️ No hay un fichero de prendas válido. Por favor, revisa el archivo <code>prendas.json</code>.
+</div>
+
+<div class="container py-4" *ngIf="!jsonInvalido">
+  <div class="row align-items-center mb-3">
+    <div class="col-12 col-md-2 text-center text-md-start mb-3 mb-md-0">
+      <img src="assets/logo_principal.png" alt="Logo Gesplan" style="height: 50px;" />
+    </div>
+    <div class="col-12 col-md-8 text-center">
+      <h2 class="fw-semibold mb-0">Personalizador de Vestuarios y Epis</h2>
+    </div>
+  </div>
+
+  <div class="row align-items-start">
+    <div class="col-md-7 mb-4 d-flex justify-content-center h-100">
+      <div class="camiseta-editor position-relative" #editorRef>
+
+        <!-- Flecha izquierda -->
+        <div class="navegador flecha-izquierda" (click)="onLeftArrowClick()">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <!-- Imagen principal de la vista -->
+        <img [src]="imagenUrl" alt="Prenda seleccionada" class="camiseta-img" />
+
+        <!-- LOGO fijo FRONTAL (si procede) -->
+        <div class="logo-flotante" *ngIf="vistaActual === 'frontal' && !sinLogo && prenda?.logos !== 99"
+          [style.left.px]="posiciones.imagenFrontal.left" [style.top.px]="posiciones.imagenFrontal.top"
+          style="cursor: move;" (mousedown)="iniciarArrastreImagen($event, 'frontal', -1)" #logoFrontal>
+          <img [src]="logoGesplan" class="logo-img" />
+        </div>
+
+        <!-- ======= IMÁGENES por vista (todas las vistas) ======= -->
+
+        <!-- FRONTAL -->
+        <ng-container *ngIf="vistaActual === 'frontal'">
+          <div class="logo-flotante" *ngFor="let img of imagesByView.frontal" [style.left.px]="img.left"
+            [style.top.px]="img.top" [style.width.px]="img.w" [style.height.px]="img.h"
+            (mousedown)="iniciarArrastreImagen($event, 'frontal', img.id)">
+            <img [src]="img.src" class="logo-img" style="cursor: move;" />
+            <span class="handle-resize" (mousedown)="iniciarResizeImagen($event, 'frontal', img.id)"></span>
+            <button class="btn-cerrar" (click)="borrarImagen('frontal', img.id)">×</button>
+          </div>
+        </ng-container>
+
+        <!-- TRASERA -->
+        <ng-container *ngIf="vistaActual === 'trasera'">
+          <div class="logo-flotante" *ngFor="let img of imagesByView.trasera" [style.left.px]="img.left"
+            [style.top.px]="img.top" [style.width.px]="img.w" [style.height.px]="img.h"
+            (mousedown)="iniciarArrastreImagen($event, 'trasera', img.id)">
+            <img [src]="img.src" class="logo-img" style="cursor: move;" />
+            <span class="handle-resize" (mousedown)="iniciarResizeImagen($event, 'trasera', img.id)"></span>
+            <button class="btn-cerrar" (click)="borrarImagen('trasera', img.id)">×</button>
+          </div>
+        </ng-container>
+
+        <!-- PERFIL DERECHO -->
+        <ng-container *ngIf="vistaActual === 'perfilDer'">
+          <div class="logo-flotante" *ngFor="let img of imagesByView.perfilDer" [style.left.px]="img.left"
+            [style.top.px]="img.top" [style.width.px]="img.w" [style.height.px]="img.h"
+            (mousedown)="iniciarArrastreImagen($event, 'perfilDer', img.id)">
+            <img [src]="img.src" class="logo-img" style="cursor: move;" />
+            <span class="handle-resize" (mousedown)="iniciarResizeImagen($event, 'perfilDer', img.id)"></span>
+            <button class="btn-cerrar" (click)="borrarImagen('perfilDer', img.id)">×</button>
+          </div>
+        </ng-container>
+
+        <!-- PERFIL IZQUIERDO -->
+        <ng-container *ngIf="vistaActual === 'perfilIzq'">
+          <div class="logo-flotante" *ngFor="let img of imagesByView.perfilIzq" [style.left.px]="img.left"
+            [style.top.px]="img.top" [style.width.px]="img.w" [style.height.px]="img.h"
+            (mousedown)="iniciarArrastreImagen($event, 'perfilIzq', img.id)">
+            <img [src]="img.src" class="logo-img" style="cursor: move;" />
+            <span class="handle-resize" (mousedown)="iniciarResizeImagen($event, 'perfilIzq', img.id)"></span>
+            <button class="btn-cerrar" (click)="borrarImagen('perfilIzq', img.id)">×</button>
+          </div>
+        </ng-container>
+
+        <!-- ======= TEXTOS por vista (todas las vistas) ======= -->
+
+        <!-- Textos FRONTAL -->
+        <ng-container *ngIf="vistaActual === 'frontal'">
+          <div class="texto-flotante" *ngFor="let txt of textosFrontal; trackBy: trackById" [style.left.px]="txt.left"
+            [style.top.px]="txt.top" [style.width.px]="txt.w" [style.height.px]="txt.h"
+            [class.seleccionado]="txt.id === textoSeleccionadoId">
+
+            <span class="handle-mover" title="Mover"
+              (mousedown)="iniciarArrastreTexto($event, txt.id, 'frontal')"></span>
+
+            <textarea class="texto-input" [style.color]="txt.color" [style.fontSize.px]="getTxtFontSize(txt.id)"
+              [style.lineHeight.px]="getTxtFontSize(txt.id) * 1.2" [style.textAlign]="txt.align || 'left'"
+              [value]="txt.contenido" (focus)="seleccionarTexto(txt.id, $event)"
+              (click)="seleccionarTexto(txt.id, $event)" (keydown.enter)="$event.stopPropagation()"
+              (keydown.control.enter)="commitTexto($any($event.target).value, txt.id, 'frontal')"
+              (keydown.meta.enter)="commitTexto($any($event.target).value, txt.id, 'frontal')"
+              (blur)="commitTexto($any($event.target).value, txt.id, 'frontal')"></textarea>
+
+
+            <span class="handle-resize" (mousedown)="iniciarResizeTexto($event, txt.id, 'frontal')"></span>
+            <button class="btn-cerrar" (click)="borrarTexto(txt.id, 'frontal'); $event.stopPropagation()">×</button>
+          </div>
+        </ng-container>
+
+        <!-- Textos TRASERA -->
+        <ng-container *ngIf="vistaActual === 'trasera'">
+          <div class="texto-flotante" *ngFor="let txt of textosTrasera; trackBy: trackById" [style.left.px]="txt.left"
+            [style.top.px]="txt.top" [style.width.px]="txt.w" [style.height.px]="txt.h"
+            [class.seleccionado]="txt.id === textoSeleccionadoId">
+
+            <span class="handle-mover" title="Mover"
+              (mousedown)="iniciarArrastreTexto($event, txt.id, 'trasera')"></span>
+
+            <textarea class="texto-input" [style.color]="txt.color" [style.fontSize.px]="getTxtFontSize(txt.id)"
+              [style.lineHeight.px]="getTxtFontSize(txt.id) * 1.2" [style.textAlign]="txt.align || 'left'"
+              [value]="txt.contenido" (focus)="seleccionarTexto(txt.id, $event)"
+              (click)="seleccionarTexto(txt.id, $event)" (keydown.enter)="$event.stopPropagation()"
+              (keydown.control.enter)="commitTexto($any($event.target).value, txt.id, 'trasera')"
+              (keydown.meta.enter)="commitTexto($any($event.target).value, txt.id, 'trasera')"
+              (blur)="commitTexto($any($event.target).value, txt.id, 'trasera')"></textarea>
+
+            <span class="handle-resize" (mousedown)="iniciarResizeTexto($event, txt.id, 'trasera')"></span>
+            <button class="btn-cerrar" (click)="borrarTexto(txt.id, 'trasera'); $event.stopPropagation()">×</button>
+          </div>
+        </ng-container>
+
+        <!-- Textos PERFIL DERECHO -->
+        <ng-container *ngIf="vistaActual === 'perfilDer'">
+          <div class="texto-flotante" *ngFor="let txt of textosPerfilDer; trackBy: trackById" [style.left.px]="txt.left"
+            [style.top.px]="txt.top" [style.width.px]="txt.w" [style.height.px]="txt.h"
+            [class.seleccionado]="txt.id === textoSeleccionadoId">
+
+            <span class="handle-mover" title="Mover"
+              (mousedown)="iniciarArrastreTexto($event, txt.id, 'perfilDer')"></span>
+
+            <textarea class="texto-input" [style.color]="txt.color" [style.fontSize.px]="getTxtFontSize(txt.id)"
+              [style.lineHeight.px]="getTxtFontSize(txt.id) * 1.2" [style.textAlign]="txt.align || 'left'"
+              [value]="txt.contenido" (focus)="seleccionarTexto(txt.id, $event)"
+              (click)="seleccionarTexto(txt.id, $event)" (keydown.enter)="$event.stopPropagation()"
+              (keydown.control.enter)="commitTexto($any($event.target).value, txt.id, 'perfilDer')"
+              (keydown.meta.enter)="commitTexto($any($event.target).value, txt.id, 'perfilDer')"
+              (blur)="commitTexto($any($event.target).value, txt.id, 'perfilDer')"></textarea>
+
+            <span class="handle-resize" (mousedown)="iniciarResizeTexto($event, txt.id, 'perfilDer')"></span>
+            <button class="btn-cerrar" (click)="borrarTexto(txt.id, 'perfilDer'); $event.stopPropagation()">×</button>
+          </div>
+        </ng-container>
+
+        <!-- Textos PERFIL IZQUIERDO -->
+        <ng-container *ngIf="vistaActual === 'perfilIzq'">
+          <div class="texto-flotante" *ngFor="let txt of textosPerfilIzq; trackBy: trackById" [style.left.px]="txt.left"
+            [style.top.px]="txt.top" [style.width.px]="txt.w" [style.height.px]="txt.h"
+            [class.seleccionado]="txt.id === textoSeleccionadoId">
+
+            <span class="handle-mover" title="Mover"
+              (mousedown)="iniciarArrastreTexto($event, txt.id, 'perfilIzq')"></span>
+
+            <textarea class="texto-input" [style.color]="txt.color" [style.fontSize.px]="getTxtFontSize(txt.id)"
+              [style.lineHeight.px]="getTxtFontSize(txt.id) * 1.2" [style.textAlign]="txt.align || 'left'"
+              [value]="txt.contenido" (focus)="seleccionarTexto(txt.id, $event)"
+              (click)="seleccionarTexto(txt.id, $event)" (keydown.enter)="$event.stopPropagation()"
+              (keydown.control.enter)="commitTexto($any($event.target).value, txt.id, 'perfilIzq')"
+              (keydown.meta.enter)="commitTexto($any($event.target).value, txt.id, 'perfilIzq')"
+              (blur)="commitTexto($any($event.target).value, txt.id, 'perfilIzq')"></textarea>
+
+            <span class="handle-resize" (mousedown)="iniciarResizeTexto($event, txt.id, 'perfilIzq')"></span>
+            <button class="btn-cerrar" (click)="borrarTexto(txt.id, 'perfilIzq'); $event.stopPropagation()">×</button>
+          </div>
+        </ng-container>
+
+        <!-- Flecha derecha -->
+        <div class="navegador flecha-derecha" (click)="onRightArrowClick()">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel derecho -->
+   <div class="col-md-5 h-100">
+  <div class="bg-white shadow rounded p-4 h-100" style="overflow-y: auto;">
+
+    <!-- Título centrado -->
+    <div class="text-center mb-2">
+      <p class="fw-bold mb-0">Seleccione prenda</p>
+      <button class="btn btn-sm btn-primary" routerLink="/puestos/puestos">puestos</button>&nbsp;
+       <button class="btn btn-sm btn-secondary" routerLink="/usuarios/usuarios">usuarios</button>
+    </div>
+
+    <!-- 1) Proveedor -->
+    <div class="mb-2">
+      <select class="form-select" name="proveedor" id="proveedor"
+              (change)="filtrarPorProveedor($event)" style="background-color: #EBE6E6;">
+         <option value="todos">Proveedores (Todos)</option>
+        <option value="Cantillana Canarias S.L.">Cantillana Canarias S.L.</option>
+        <option value="Sebastian Tejera S.L.">Sebastián Tejera S.L.</option>
+     
+      </select>
+    </div>
+
+    <!-- 2) Prenda -->
+    <div class="mb-2">
+      <select class="form-select" [(ngModel)]="prendaSeleccionada" (change)="onPrendaChange()">
+        <option *ngFor="let item of prendasEntries" [value]="item[0]">
+          {{ item[1].nombre | capitalize }}
+        </option>
+      </select>
+    </div>
+
+    <!-- 3) Botones (texto, imagen, reset) -->
+    <div class="d-flex gap-2 mb-2">
+      <button type="button" class="btn btn-sm btn-outline-primary p-1" title="Añadir texto"
+              *ngIf="prenda?.logos !== 99" (click)="agregarTexto()">
+        <i class="fas fa-font"></i>
+      </button>
+
+      <button type="button" class="btn btn-sm btn-outline-secondary p-1" title="Añadir imagen"
+              *ngIf="prenda?.logos !== 99" (click)="agregarImagen()">
+        <i class="fas fa-image"></i>
+      </button>
+
+      <button type="button" class="btn btn-sm btn-outline-danger p-1" title="Borrar todos los textos e imágenes"
+              *ngIf="hasAnyContent" (click)="resetTodo()">
+        <i class="fas fa-eraser"></i>
+      </button>
+    </div>
+
+    <!-- Información de la prenda -->
+    <div class="contenedor-texto">
+      <h4>Información de la prenda:</h4>
+      <div class="contenido-archivo">
+        <ul>
+          <li *ngFor="let linea of contenidoTxt">
+            {{ linea }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Proveedor de la prenda (solo lectura) -->
+    <div class="mt-2">
+      <h5>Proveedor:</h5>
+      <div class="proveedor-input">
+        <input type="text" class="form-control" [value]="prenda?.proveedor" readonly />
+      </div>
+    </div>
+
+    <!-- Herramientas de texto -->
+    <ng-container *ngIf="hasTextTools; else sinTextos">
+      <div class="mt-3">
+        <label class="fw-bold mb-1 d-block">Color del texto seleccionado</label>
+        <div class="d-flex align-items-center gap-2">
+          <input type="color" class="form-control form-control-color" [disabled]="!textoSeleccionado"
+                 [value]="textoSeleccionado?.color || '#000000'"
+                 (input)="cambiarColorTexto($any($event.target).value)" />
+          <small class="text-muted" *ngIf="!textoSeleccionado">Selecciona un texto en la prenda</small>
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <label class="fw-bold mb-1 d-block">Selecciona el tamaño de la fuente</label>
+        <select class="form-select form-select-sm" [disabled]="!textoSeleccionado" [ngModel]="getFuenteActual()"
+                (ngModelChange)="cambiarTamanoFuente($event)">
+          <option *ngFor="let s of tamanosFuente" [ngValue]="s">{{ s }} px</option>
+        </select>
+      </div>
+
+      <div class="mt-2">
+        <div class="d-flex align-items-center justify-content-between">
+          <label class="fw-bold mb-0">Alineación:</label>
+          <div class="btn-group" role="group" aria-label="Alineación del texto">
+            <button type="button" class="btn btn-outline-secondary" [disabled]="!textoSeleccionado"
+                    [class.active]="getAlignActual()==='left'" (click)="cambiarAlineacionTexto('left')">
+              <i class="fas fa-align-left"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary" [disabled]="!textoSeleccionado"
+                    [class.active]="getAlignActual()==='center'" (click)="cambiarAlineacionTexto('center')">
+              <i class="fas fa-align-center"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary" [disabled]="!textoSeleccionado"
+                    [class.active]="getAlignActual()==='right'" (click)="cambiarAlineacionTexto('right')">
+              <i class="fas fa-align-right"></i>
+            </button>
+          </div>
+        </div>
+        <small class="text-muted" *ngIf="!textoSeleccionado">Selecciona un texto en la prenda</small>
+      </div>
+    </ng-container>
+
+    <ng-template #sinTextos>
+      <div class="alert alert-light border mt-3" *ngIf="!sinLogo">
+        Para mostrar las herramientas de edición, añade un texto a la imagen de la prenda.
+      </div>
+    </ng-template>
+
+    <!-- Código de proyecto + botón -->
+    <p class="text-center fw-bold mt-3 mb-1">Código de proyecto <span class="text-danger">*</span></p>
+    <input type="text" class="form-control mb-3" [(ngModel)]="codigoProyecto"
+           placeholder="Introduce el código del proyecto" />
+
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-sm btn-success w-50" [disabled]="codigoProyecto==='' || generandoPDF"
+              (click)="generarPDF()">
+        <span *ngIf="generandoPDF" class="text-white me-2">Generando</span>
+        <i class="fa fa-file-pdf text-white" style="font-size: 25px;"></i> Generar PDF
+      </button>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+  <!-- Modal genérico -->
+  <!-- <div class="modal fade" id="msg" tabindex="-1" aria-labelledby="msgLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+  <!-- Overlay generando PDF -->
+  <div *ngIf="generandoPDF" class="pdf-backdrop">
+    <div class="spinner-box">
+      <div class="spinner-border text-light" role="status"></div>
+      <p class="mt-3 text-white fw-bold">Generando PDF...</p>
+    </div>
+  </div>

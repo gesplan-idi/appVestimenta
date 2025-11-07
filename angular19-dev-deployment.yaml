@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular19-dev
+spec:
+  replicas: 3  # <- Esto crea 3 copias de la app
+  selector:
+    matchLabels:
+      app: angular19
+  template:
+    metadata:
+      labels:
+        app: angular19
+    spec:
+      containers:
+        - name: angular19
+          image: angular19-dev
+          imagePullPolicy: Never  
+          ports:
+            - containerPort: 4200
+          env:
+            - name: CHOKIDAR_USEPOLLING
+              value: "true"
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

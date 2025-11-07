@@ -1,0 +1,9 @@
+Subir las prendas actualizadas según el repositorio de Moi (en ese caso no hay logo fijo, 
+solo en algunos ítems, como la mochila, gorras, que tienen medidas diferentes).
+Añadir la descripción de cada prenda.
+Añadir selector de alineación de texto.
+Capar el formato de imágenes que se pueden subir (o solo permitir jpg y png o no permitir pdf, word... 
+lo que sea más funcional).
+Normalizar los PDF: primera página con cuatro vistas y luego una en 
+cada página (en el ejemplo de Moi solo aparecían en el PDF las prendas 
+serigrafiadas, pero quizá es útil que se vean todas) y que se vean los logos/textos correctamente, sin estar expandidos.

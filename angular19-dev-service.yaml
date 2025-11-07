@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: angular19-service
+spec:
+  selector:
+    app: angular19
+  ports:
+    - protocol: TCP
+      port: 4200
+      targetPort: 4200
+      nodePort: 31234
+  type: NodePort
