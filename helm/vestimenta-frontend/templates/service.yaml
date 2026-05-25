@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vestimenta-frontend
+  namespace: {{ include "vestimenta-frontend.namespace" . }}
+  labels:
+    {{- include "vestimenta-frontend.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: http
+      port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+  selector:
+    {{- include "vestimenta-frontend.selectorLabels" . | nindent 4 }}
