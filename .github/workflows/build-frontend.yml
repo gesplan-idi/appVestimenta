@@ -1,0 +1,170 @@
+name: Frontend - Build and Push
+
+on:
+  pull_request:
+    branches:
+      - pre
+      - main
+  push:
+    branches:
+      - pre
+  workflow_dispatch:
+    inputs:
+      publish_pre:
+        description: "Build and push the PRE image to ECR"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_REGION: eu-west-1
+  ECR_REPOSITORY_PRE: gesplan-pre/vestimenta-frontend
+  NODE_VERSION: "20"
+  DOCKERFILE_PATH: Dockerfile
+
+jobs:
+  validate:
+    name: Validate frontend build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository structure
+        shell: bash
+        run: |
+          test -f package.json
+          test -f angular.json
+          test -d src
+          test -f "${DOCKERFILE_PATH}"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate npm scripts
+        shell: bash
+        run: |
+          npm run | grep -qE '^  build$'
+          if npm run | grep -qE '^  lint$'; then
+            echo "HAS_LINT=true" >> "$GITHUB_ENV"
+          else
+            echo "HAS_LINT=false" >> "$GITHUB_ENV"
+          fi
+          if npm run | grep -qE '^  test$'; then
+            echo "HAS_TEST=true" >> "$GITHUB_ENV"
+          else
+            echo "HAS_TEST=false" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build Angular application
+        run: npm run build -- --configuration production
+
+      - name: Run lint
+        if: env.HAS_LINT == 'true'
+        run: npm run lint
+
+      - name: Run tests
+        if: env.HAS_TEST == 'true'
+        run: npm test -- --watch=false --browsers=ChromeHeadless
+
+      - name: Build Docker image
+        run: docker build -f "${DOCKERFILE_PATH}" -t vestimenta-frontend:ci .
+
+      - name: Workflow summary
+        shell: bash
+        run: |
+          {
+            echo "### Frontend CI validation"
+            echo ""
+            echo "- Angular build validated."
+            echo "- Docker image build validated with \`${DOCKERFILE_PATH}\`."
+            echo "- No ECR login or image push was executed."
+            echo "- No Helm, kubectl, EKS deploy, Terraform apply or destroy was executed."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  build-and-push-pre:
+    name: Build and push PRE image
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish_pre == true)
+    outputs:
+      image_tag: ${{ steps.image.outputs.image_tag }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository structure
+        shell: bash
+        run: |
+          test -f package.json
+          test -f angular.json
+          test -d src
+          test -f "${DOCKERFILE_PATH}"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate npm build script
+        run: npm run | grep -qE '^  build$'
+
+      - name: Build Angular application
+        run: npm run build -- --configuration production
+
+      - name: Configure AWS credentials PRE
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_PRE }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and push Docker image
+        id: image
+        shell: bash
+        run: |
+          IMAGE_TAG="sha-${GITHUB_SHA}"
+          AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
+          IMAGE="${ECR_REGISTRY}/${ECR_REPOSITORY_PRE}:${IMAGE_TAG}"
+
+          docker build -f "${DOCKERFILE_PATH}" -t "${IMAGE}" .
+          docker push "${IMAGE}"
+
+          echo "IMAGE_TAG=${IMAGE_TAG}" >> "$GITHUB_ENV"
+          echo "image_tag=${IMAGE_TAG}" >> "$GITHUB_OUTPUT"
+          echo "IMAGE=${IMAGE}" >> "$GITHUB_ENV"
+
+      - name: Workflow summary
+        shell: bash
+        run: |
+          {
+            echo "### Frontend image published"
+            echo ""
+            echo "- Image: \`${IMAGE}\`"
+            echo "- Tag: \`${IMAGE_TAG}\`"
+            echo "- Repository: \`${ECR_REPOSITORY_PRE}\`"
+            echo "- Region: \`${AWS_REGION}\`"
+            echo ""
+            echo "Imagen publicada en ECR. Para desplegar, actualizar el tag correspondiente en infra-apps y ejecutar el workflow de despliegue desde infra-apps."
+            echo ""
+            echo "No se ha ejecutado Helm, kubectl, despliegue en EKS, Terraform apply ni Terraform destroy desde este repositorio."
+          } >> "$GITHUB_STEP_SUMMARY"
