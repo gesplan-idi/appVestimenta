@@ -5,11 +5,16 @@ on:
     branches:
       - pre
       - main
-  push:
-    branches:
-      - pre
   workflow_dispatch:
     inputs:
+      environment:
+        description: "Target environment"
+        required: true
+        default: pre
+        type: choice
+        options:
+          - pre
+          - pro
       publish_pre:
         description: "Build and push the PRE image to ECR"
         required: true
@@ -33,6 +38,12 @@ jobs:
     if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
 
     steps:
+      - name: Block PRO workflow dispatch
+        if: github.event_name == 'workflow_dispatch' && inputs.environment == 'pro'
+        run: |
+          echo "::error::PRO deployment is not enabled yet"
+          exit 1
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -97,7 +108,7 @@ jobs:
   build-and-push-pre:
     name: Build and push PRE image
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish_pre == true)
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_pre == true
     outputs:
       image_tag: ${{ steps.image.outputs.image_tag }}
 
@@ -112,6 +123,26 @@ jobs:
           test -f angular.json
           test -d src
           test -f "${DOCKERFILE_PATH}"
+
+      - name: Validate PRE publish request
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ inputs.environment }}" == "pro" ]]; then
+            echo "::error::PRO deployment is not enabled yet"
+            exit 1
+          fi
+
+          if [[ "${{ inputs.environment }}" != "pre" ]]; then
+            echo "::error::Only PRE image publishing is enabled."
+            exit 1
+          fi
+
+          if [[ "${GITHUB_REF_NAME}" != "pre" ]]; then
+            echo "::error::PRE image publishing must be run from the pre branch."
+            exit 1
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -205,6 +236,7 @@ jobs:
             --arg image_tag "${IMAGE_TAG}" \
             --arg source_repo "${GITHUB_REPOSITORY}" \
             --arg source_sha "${GITHUB_SHA}" \
+            --arg source_branch "${GITHUB_REF_NAME}" \
             --arg source_run_id "${GITHUB_RUN_ID}" \
             '{
               event_type: $event_type,
@@ -214,6 +246,7 @@ jobs:
                 image_tag: $image_tag,
                 source_repo: $source_repo,
                 source_sha: $source_sha,
+                source_branch: $source_branch,
                 source_run_id: $source_run_id
               }
             }')"
