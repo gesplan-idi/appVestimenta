@@ -169,22 +169,28 @@ jobs:
             echo "No se ha ejecutado Helm, kubectl, despliegue en EKS, Terraform apply ni Terraform destroy desde este repositorio."
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Create infra-apps dispatch token
+        id: infra-apps-token
+        if: ${{ success() }}
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.INFRA_APPS_DISPATCH_APP_ID }}
+          private-key: ${{ secrets.INFRA_APPS_DISPATCH_PRIVATE_KEY }}
+          owner: gesplan-idi
+          repositories: infra-apps
+
       - name: Notify infra-apps PRE deployment
         if: ${{ success() }}
         env:
-          INFRA_APPS_DISPATCH_TOKEN: ${{ secrets.INFRA_APPS_DISPATCH_TOKEN }}
+          INFRA_APPS_DISPATCH_TOKEN: ${{ steps.infra-apps-token.outputs.token }}
           IMAGE_TAG: ${{ steps.image.outputs.image_tag }}
         shell: bash
         run: |
           set -euo pipefail
 
           if [[ -z "${INFRA_APPS_DISPATCH_TOKEN}" ]]; then
-            echo "::notice::INFRA_APPS_DISPATCH_TOKEN is not configured. Skipping infra-apps repository_dispatch."
-            {
-              echo ""
-              echo "No se ha notificado a infra-apps porque falta el secret \`INFRA_APPS_DISPATCH_TOKEN\`."
-            } >> "$GITHUB_STEP_SUMMARY"
-            exit 0
+            echo "::error::GitHub App token was not generated."
+            exit 1
           fi
 
           if [[ "${IMAGE_TAG}" != sha-* ]]; then
@@ -222,5 +228,5 @@ jobs:
 
           {
             echo ""
-            echo "Repository dispatch enviado a \`gesplan-idi/infra-apps\` para desplegar \`${IMAGE_TAG}\` en PRE."
+            echo "Repository dispatch enviado a \`gesplan-idi/infra-apps\` con GitHub App para desplegar \`${IMAGE_TAG}\` en PRE."
           } >> "$GITHUB_STEP_SUMMARY"
