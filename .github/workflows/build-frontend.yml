@@ -20,6 +20,10 @@ on:
         required: true
         default: false
         type: boolean
+      confirmation:
+        description: "Type PUBLISH_VESTIMENTA_FRONTEND_PRE to publish the PRE image"
+        required: true
+        type: string
 
 permissions:
   id-token: write
@@ -28,6 +32,9 @@ permissions:
 env:
   AWS_REGION: eu-west-1
   ECR_REPOSITORY_PRE: gesplan-pre/vestimenta-frontend
+  EXPECTED_SOURCE_REPO: gesplan-idi/appVestimenta
+  INFRA_APPS_REPO: gesplan-idi/infra-apps
+  DISPATCH_EVENT_TYPE: deploy-vestimenta-pre
   NODE_VERSION: "20"
   DOCKERFILE_PATH: Dockerfile
 
@@ -45,7 +52,7 @@ jobs:
           exit 1
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Validate repository structure
         shell: bash
@@ -56,7 +63,7 @@ jobs:
           test -f "${DOCKERFILE_PATH}"
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -109,12 +116,49 @@ jobs:
     name: Build and push PRE image
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch' && inputs.publish_pre == true
+    concurrency:
+      group: publish-vestimenta-frontend-pre
+      cancel-in-progress: false
     outputs:
       image_tag: ${{ steps.image.outputs.image_tag }}
 
     steps:
+      - name: Validate PRE publish request
+        env:
+          INPUT_ENVIRONMENT: ${{ inputs.environment }}
+          INPUT_PUBLISH_PRE: ${{ inputs.publish_pre }}
+          INPUT_CONFIRMATION: ${{ inputs.confirmation }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" != "workflow_dispatch" ]]; then
+            echo "::error::PRE publishing is allowed only through workflow_dispatch."
+            exit 1
+          fi
+          if [[ "${INPUT_ENVIRONMENT}" != "pre" || "${INPUT_PUBLISH_PRE}" != "true" ]]; then
+            echo "::error::PRE publishing requires environment=pre and publish_pre=true."
+            exit 1
+          fi
+          if [[ "${INPUT_CONFIRMATION}" != "PUBLISH_VESTIMENTA_FRONTEND_PRE" ]]; then
+            echo "::error::Confirmation does not match PUBLISH_VESTIMENTA_FRONTEND_PRE."
+            exit 1
+          fi
+          if [[ "${GITHUB_REF}" != "refs/heads/pre" || "${GITHUB_REF_NAME}" != "pre" ]]; then
+            echo "::error::PRE image publishing must run from refs/heads/pre."
+            exit 1
+          fi
+          if [[ "${GITHUB_REPOSITORY}" != "${EXPECTED_SOURCE_REPO}" ]]; then
+            echo "::error::Unexpected source repository."
+            exit 1
+          fi
+          if [[ "${INPUT_ENVIRONMENT} ${GITHUB_REF}" == *"pro"* ]]; then
+            echo "::error::PRO publishing is not enabled."
+            exit 1
+          fi
+
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Validate repository structure
         shell: bash
@@ -124,28 +168,8 @@ jobs:
           test -d src
           test -f "${DOCKERFILE_PATH}"
 
-      - name: Validate PRE publish request
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          if [[ "${{ inputs.environment }}" == "pro" ]]; then
-            echo "::error::PRO deployment is not enabled yet"
-            exit 1
-          fi
-
-          if [[ "${{ inputs.environment }}" != "pre" ]]; then
-            echo "::error::Only PRE image publishing is enabled."
-            exit 1
-          fi
-
-          if [[ "${GITHUB_REF_NAME}" != "pre" ]]; then
-            echo "::error::PRE image publishing must be run from the pre branch."
-            exit 1
-          fi
-
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -160,19 +184,50 @@ jobs:
         run: npm run build -- --configuration production
 
       - name: Configure AWS credentials PRE
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@7474bc4690e29a8392af63c5b98e7449536d5c3a # v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_PRE }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Validate AWS identity and ECR target PRE
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${AWS_REGION}" != "eu-west-1" || "${ECR_REPOSITORY_PRE}" != "gesplan-pre/vestimenta-frontend" ]]; then
+            echo "::error::Unexpected AWS region or ECR repository for PRE."
+            exit 1
+          fi
+
+          identity_json="$(aws sts get-caller-identity --output json)"
+          account_id="$(jq -r '.Account' <<< "${identity_json}")"
+          caller_arn="$(jq -r '.Arn' <<< "${identity_json}")"
+
+          if [[ "${account_id}" != "674624358677" ]]; then
+            echo "::error::Unexpected AWS account for PRE."
+            exit 1
+          fi
+          case "${caller_arn}" in
+            arn:aws:sts::674624358677:assumed-role/gesplan-github-actions-pre/*)
+              ;;
+            *)
+              echo "::error::Unexpected AWS caller ARN for frontend PRE publication."
+              exit 1
+              ;;
+          esac
+
       - name: Login to Amazon ECR
-        uses: aws-actions/amazon-ecr-login@v2
+        uses: aws-actions/amazon-ecr-login@d539f0932e70871a027e9d5a9d8fc38589180a64 # v2
 
       - name: Build and push Docker image
         id: image
         shell: bash
         run: |
           IMAGE_TAG="sha-${GITHUB_SHA}"
+          if [[ ! "${GITHUB_SHA}" =~ ^[0-9a-f]{40}$ || ! "${IMAGE_TAG}" =~ ^sha-[0-9a-f]{40}$ || "${IMAGE_TAG}" != "sha-${GITHUB_SHA}" ]]; then
+            echo "::error::Image tag must be the immutable sha-<40 lowercase hex> for GITHUB_SHA."
+            exit 1
+          fi
           AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
           ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
           IMAGE="${ECR_REGISTRY}/${ECR_REPOSITORY_PRE}:${IMAGE_TAG}"
@@ -203,7 +258,7 @@ jobs:
       - name: Create infra-apps dispatch token
         id: infra-apps-token
         if: ${{ success() }}
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2
         with:
           app-id: ${{ vars.INFRA_APPS_DISPATCH_APP_ID }}
           private-key: ${{ secrets.INFRA_APPS_DISPATCH_PRIVATE_KEY }}
@@ -224,13 +279,21 @@ jobs:
             exit 1
           fi
 
-          if [[ "${IMAGE_TAG}" != sha-* ]]; then
-            echo "::error::Image tag must start with sha-."
+          if [[ ! "${GITHUB_SHA}" =~ ^[0-9a-f]{40}$ || ! "${IMAGE_TAG}" =~ ^sha-[0-9a-f]{40}$ || "${IMAGE_TAG}" != "sha-${GITHUB_SHA}" ]]; then
+            echo "::error::Image tag must equal sha-GITHUB_SHA with 40 lowercase hexadecimal characters."
+            exit 1
+          fi
+          if [[ "${GITHUB_REPOSITORY}" != "${EXPECTED_SOURCE_REPO}" || "${GITHUB_REF_NAME}" != "pre" ]]; then
+            echo "::error::Dispatch source must be ${EXPECTED_SOURCE_REPO} branch pre."
+            exit 1
+          fi
+          if [[ "${INFRA_APPS_REPO}" != "gesplan-idi/infra-apps" || "${DISPATCH_EVENT_TYPE}" != "deploy-vestimenta-pre" ]]; then
+            echo "::error::Unexpected dispatch destination or event type."
             exit 1
           fi
 
           payload="$(jq -n \
-            --arg event_type "deploy-vestimenta-pre" \
+            --arg event_type "${DISPATCH_EVENT_TYPE}" \
             --arg environment "pre" \
             --arg component "frontend" \
             --arg image_tag "${IMAGE_TAG}" \
@@ -253,7 +316,7 @@ jobs:
 
           curl --fail-with-body --show-error --silent \
             --request POST \
-            --url "https://api.github.com/repos/gesplan-idi/infra-apps/dispatches" \
+            --url "https://api.github.com/repos/${INFRA_APPS_REPO}/dispatches" \
             --header "Accept: application/vnd.github+json" \
             --header "Authorization: Bearer ${INFRA_APPS_DISPATCH_TOKEN}" \
             --header "X-GitHub-Api-Version: 2022-11-28" \
