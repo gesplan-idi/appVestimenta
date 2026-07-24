@@ -186,7 +186,7 @@ jobs:
       - name: Configure AWS credentials PRE
         uses: aws-actions/configure-aws-credentials@7474bc4690e29a8392af63c5b98e7449536d5c3a # v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_PRE }}
+          role-to-assume: ${{ vars.AWS_ROLE_ARN_ECR_PRE }}
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Validate AWS identity and ECR target PRE
@@ -208,7 +208,7 @@ jobs:
             exit 1
           fi
           case "${caller_arn}" in
-            arn:aws:sts::674624358677:assumed-role/gesplan-github-actions-pre/*)
+            arn:aws:sts::674624358677:assumed-role/gesplan-github-actions-pre-vestimenta-frontend-ecr/*)
               ;;
             *)
               echo "::error::Unexpected AWS caller ARN for frontend PRE publication."
